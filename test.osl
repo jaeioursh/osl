@@ -1,0 +1,9 @@
+shader simple_material(
+    vector d = vector (0, 0, 0),
+    output float pitch= 0.0,
+    output float yaw= 0.0
+    )
+{
+    pitch = asin(-d.y);
+    yaw = atan2(d.x, d.z);
+}

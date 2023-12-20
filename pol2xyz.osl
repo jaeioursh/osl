@@ -1,0 +1,8 @@
+shader pol2(
+    vector pol = vector (0, 0, 0),
+    output vector cord = vector (0, 0, 0)
+    )
+{
+    pitch = asin(-d.y);
+    yaw = atan2(d.x, d.z);
+}
